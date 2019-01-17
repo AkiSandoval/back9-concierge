@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Concierge Booking Tee Time</title>
+    <link rel="icon" type="img/ico" href="img/fav.ico">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <!-- Bootstrap-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+    <script src="slider.js"></script>
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark p-3 fixed-top">
+    <div class="container">
+      <a href="#"><img src="img/b9logo.png" alt="concierge booking golf" class="navbar-brand"></a>
+      <button class="navbar-toggler navbar-dark" type="button" data-toggle="collapse" data-target="#collapsingnavbar">
+       <span class="navbar-toggler-icon"></span></button>
+        <div class="navbar-collapse collapse" id="collapsingnavbar">
+          <div class="btn d-flex ml-auto">
+            <a  href="operator-license-agreement-2018.pdf" target="_blank" class="header-btn contract-btn ml-3">DMC / TO AGREEMENT</a>
+            <a  href="hotel-license-agreement-2018.pdf" target="_blank" class="header-btn hotel-btn ml-3">HOTEL AGREEMENT</a>
+          </div>
+        </div>
+    </div>
+  </nav> 
+  <div class="hero text-white text-center">
+    <div class="overlay">
+      <h1 class="mb-4"><strong>BACK9 CONCIERGE</strong></h1>
+      <h2 class="header-text mb-4">Provide your customers with seamless booking at nearby golf clubs.</h2>
+      <a  href="https://back9-concierge-test.netlify.com/" target="_blank" class="header-btn sandbox-btn mr-2">BOOK NOW</a>
+      <a  href="https://www.back9solutions.com/contact" target="_blank" class="header-btn contact-btn">CONTACT US</a>
+    </div>    
+  </div>
+  <div class="container-fluid top-icon">
+    <img src="img/top-icon.png" alt="tee-time-booking">
+  </div>
+<!--concierge-demo-->
+  <div class="concierge-demo">
+    <div class="container" align="center">
+      <h2>The booking experience</h2>
+      <div class="stroke"></div>
+      <h6>Watch this video to see how quickly and easily a booking can be made.</h6>
+        <iframe width="100%" height="575"  src="https://www.youtube.com/embed/Td6pEkpCP9E?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+    </div>
+  </div>
+<!--digital-platforms-->
+  <div class="container digital-platforms" align="center">
+    <h2>Connect your digital platforms</h2>
+      <div class="stroke"></div>
+        <h6>Our API's and web widgets provide integrated options for businesses.</h6>
+        <div class="row">
+        <ul class="col-md-4">
+          <li><img src="img/pc-black.png" alt="web widget" width="80%"></li>
+          <li><span class="platforms-title">Website</span></li>
+          <li><p>Use Back9's API's or web widget to offer direct integrated booking on your own site.</p></li>
+        </ul> 
+        <ul class="col-md-4">
+          <li><img src="img/ipad-black.png" alt="API's" width="80%"></li>
+          <li><span class="platforms-title">In Room</span></li>
+          <li><p>Use Back9's API's or web widget to offer in room golf rates and offers.</p></li>
+        </ul>
+        <ul class="col-md-4">
+          <li><img src="img/cp-black.png" alt="Golf booking apps" width="80%"></li>
+          <li><span class="platforms-title">Mobile Apps</span></li>
+          <li><p>Use Back9's API to add golf booking as a 'value add' for your customers</p></li>
+        </ul>
+      </div>
+  </div>
+
+<!--
+<div class="container pb-5 text-center">
+  <h2>Our customers</h2>
+        <div class="stroke"></div>
+  <div class="customers d-flex justify-content-around">
+  <ul>
+  <li><img src="img/jumeirah-logo.png"></li>
+  <li>Jumeirah Group</li>
+</ul>
+<ul>
+  <li><img src="img/address-logo.png"></li>
+  <li>The Address Hotel</li>
+</ul>
+<ul>
+  <li><img src="img/arabian-logo.png"></li>
+  <li>Arabian Adventures</li>
+</ul>
+<ul>
+  <li><img src="img/accor-logo.png"></li>
+  <li>Accor Hotels</li>
+</ul>
+<ul>
+  <li><img src="img/marriott-logo.png"></li>
+  <li>Marriott</li>
+</ul>
+</div>
+</div>-->
+
+<!--Additional Revenue Stream-->
+  <div class="container-fluid revenue mt-3" align="center">
+    <h2>Additional Revenue Stream</h2>
+      <div class="stroke"></div>
+      <h6>Utilise Back9's golf rates to generate revenue from customer bookings.</h6>
+      <img src="img/graph.png" alt="revenue" class="revenue-stream">
+  </div>
+
+ <!--reward points & loyalty-->
+  <div class="rewardpoints container" align="center">
+    <h2>Reward Points & Loyalty</h2>
+    <div class="stroke"></div>
+    <h6>Integrate your own 'Reward' scheme as a means for customers to 'burn' points and discount golf rates.</h6>
+      <div class="d-flex align-items-center">
+        <div class="amount">USD<br/><span>$ </span><span id="price"></span></div>
+        <input type="range" value="2500" min="0" max="5000" step="10" class="slider mx-1" id="myRange">
+        <div class="reward"><span id="reward"></span></div>
+      </div>
+      <div class="mt-3 d-flex justify-content-between align-items-center">
+        <div class="ml-2 reward-text">Golf Rate</div>
+        <div><img src="img/arrow.png" class="arrow"></div>
+        <div class="reward-text">Reward Points</div>
+      </div>
+  </div>
+<!--footer-->
+  <footer class="text-center text-white p-5">
+    <div class="row">
+      <div class="col-md-4 text-md-left">
+        <h6 class="mb-4">DOWNLOAD THE APP</h6>
+        <div class="px-4">
+          <a class="fab fa-apple link-icon rounded-circle text-center mr-2" href="https://itunes.apple.com/kw/app/spikeson-com/id1257495538?mt=8" target="_blank"></a>
+          <a class="fab fa-google-play link-icon rounded-circle text-center" href="https://play.google.com/store/apps/details?id=link.spikeson.app" target="_blank"></a></div>
+        </div>
+        <div class="col-md-4">
+          <h6 class="poweredby mb-3">POWERED BY</h6>
+          <a href="https://www.back9solutions.com" target="_blank"><img src="img/back9.png" height="50" class="back9logo"></a>
+        </div>
+        <div class="col-md-4 text-md-right mb-0">
+          <h6 class="mb-4">STAY CONNECTED</h6>
+          <a class="fab fa-facebook-f link-icon rounded-circle text-center mr-2" href="https://www.facebook.com/spikesongolf/" target="_blank"></a>
+          <a class="fab fa-twitter link-icon rounded-circle text-center mr-2" href="https://twitter.com/spikesongolf" target="_blank"></a>
+          <a class="fab fa-instagram link-icon rounded-circle text-center" href="https://www.instagram.com/spikesongolf/" target="_blank"></a>
+        </div>
+      </div>
+  </footer>
+</body>
+</html>
+
+
+
