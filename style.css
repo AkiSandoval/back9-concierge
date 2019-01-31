@@ -421,6 +421,9 @@ footer {
 .top-icon img {
   padding: 15px 0;
 }
+.dollar-sign {
+  font-size: 15px;
+}
 }
 @media only screen and (max-width: 448px) {
 .icons-header img {
